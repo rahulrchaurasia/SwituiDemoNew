@@ -81,8 +81,6 @@ class Router<Route: Equatable>: ObservableObject {
 // Router
 struct RouterHost<Route: Equatable, Screen: View>: UIViewControllerRepresentable {
     
-    
-    
     var router: Router<Route>
     
   
