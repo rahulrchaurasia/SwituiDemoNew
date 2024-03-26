@@ -30,14 +30,31 @@ struct ProfileView: View {
                   
                 } label: {
                     
-                    Text("Pop to Product")
+                    Text("Pop to prev: Product")
                         .tint(.white)
                         .padding()
                         .padding(.horizontal)
                         .background() {
                            
                             RoundedRectangle(cornerRadius: 20, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
-                                .fill(Color.green)
+                                .fill(Color.mint)
+                                
+                        }
+                }
+                
+                Button {
+                   
+                    router.popToView(.Detail1)
+                        
+                } label: {
+                    Text("Pop to prev: Details")
+                        .tint(.white)
+                        .padding()
+                        .padding(.horizontal)
+                        .background() {
+                           
+                            RoundedRectangle(cornerRadius: 20, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
+                                .fill(Color.mint)
                                 
                         }
                 }

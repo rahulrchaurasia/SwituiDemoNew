@@ -40,6 +40,11 @@ struct ProductView: View {
                                 
                         }
                 }
+                
+               
+                Divider()
+                    .tint(Color.black)
+                
                
                 Button {
                     router.pop()

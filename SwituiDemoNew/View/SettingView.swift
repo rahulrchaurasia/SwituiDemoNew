@@ -27,7 +27,7 @@ struct SettingView: View {
                 
                 
                 Button {
-                    router.push(.Setting)
+                    router.push(.Profile)
                         
                 } label: {
                     Text("push to Profile")
