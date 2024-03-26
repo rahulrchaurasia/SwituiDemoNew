@@ -14,22 +14,51 @@ struct DetailView: View {
     var body: some View {
         ZStack {
             
-            Color.green
+            Color.green.opacity(0.2)
             
             VStack(spacing: 20){
+                Text("Details Page")
+                .font(.largeTitle)
+                .padding(.bottom,40)
+                
+                
                 Text("Hello I'm detail")
              
+                
+                
+                
+                
+                
                 Button {
                     router.push(.Product)
-                  
+                        
                 } label: {
-                    Text("Next")
+                    Text("push to Product")
+                        .tint(.white)
+                        .padding()
+                        .padding(.horizontal)
+                        .background() {
+                           
+                            RoundedRectangle(cornerRadius: 20, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
+                                .fill(Color.green)
+                                
+                        }
                 }
-              
+               
                 Button {
                     router.pop()
+                        
                 } label: {
-                    Text("Pop")
+                    Text("Pop ")
+                        .tint(.white)
+                        .padding()
+                        .padding(.horizontal)
+                        .background() {
+                           
+                            RoundedRectangle(cornerRadius: 20, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
+                                .fill(Color.indigo.opacity(0.9))
+                                
+                        }
                 }
                 
               

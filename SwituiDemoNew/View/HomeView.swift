@@ -13,7 +13,7 @@ struct HomeView: View {
     @State private var isShowingText = false
     var body: some View {
         ZStack {
-            Color.yellow
+            Color.yellow.opacity(0.2)
             
             VStack(spacing :20){
                 
@@ -21,10 +21,22 @@ struct HomeView: View {
                     .font(.largeTitle)
                     .padding(.bottom,40)
                 
+               
+                
                 Button {
                     router.push(.Detail1)
+                        
                 } label: {
                     Text("Go to detail 1")
+                        .tint(.white)
+                        .padding()
+                        .padding(.horizontal)
+                        .background() {
+                           
+                            RoundedRectangle(cornerRadius: 20, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
+                                .fill(Color.green)
+                                
+                        }
                 }
                 
                 

@@ -16,9 +16,11 @@ struct ProductView: View {
             Color.indigo
             
             VStack(spacing :20){
-                Text("Product ")
-                    .font(.largeTitle)
-                    .tint(.white)
+                Text("Product Page")
+                .font(.largeTitle)
+                .padding(.bottom,40)
+                
+              
                 
               
                 
@@ -38,19 +40,38 @@ struct ProductView: View {
                                 
                         }
                 }
+               
                 Button {
                     router.pop()
-                
+                        
                 } label: {
-                    Text("Pop")
+                    Text("Pop ")
                         .tint(.white)
+                        .padding()
+                        .padding(.horizontal)
+                        .background() {
+                           
+                            RoundedRectangle(cornerRadius: 20, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
+                                .fill(Color.orange.opacity(0.7))
+                                
+                        }
                 }
+                
                 
                 Button {
                     router.popToRoot()
+                        
                 } label: {
                     Text("Pop To Root")
                         .tint(.white)
+                        .padding()
+                        .padding(.horizontal)
+                        .background() {
+                           
+                            RoundedRectangle(cornerRadius: 20, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
+                                .fill(Color.red)
+                                
+                        }
                 }
                 
                 
