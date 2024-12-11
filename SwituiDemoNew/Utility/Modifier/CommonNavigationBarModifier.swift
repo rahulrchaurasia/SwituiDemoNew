@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-
+// Added Common
 struct CommonNavigationBarModifier: ViewModifier {
   func body(content: Content) -> some View {
     content
